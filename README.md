@@ -15,6 +15,12 @@
 
 ---
 
+![設定面板與複製分享連結示意](screenshot/screenshot01.png)
+
+![搜尋結果網格與商品橫條列對比](screenshot/screenshot02.png)
+
+---
+
 ## 目錄
 
 - [功能](#功能)
@@ -111,6 +117,7 @@ https://shopee.tw/…-i.6685094.56967235743?sp_atk=…
 | [`popup.html`](popup.html) / [`popup.js`](popup.js) / [`popup.css`](popup.css) | 工具列設定面板 |
 | [`_locales/`](_locales/) | 多語系字串（`zh_TW`、`zh_CN`、`ja`、`en_US`） |
 | [`icons/`](icons/) | 工具列圖示（含開啟／關閉狀態） |
+| [`screenshot/`](screenshot/) | 商店與說明用截圖 |
 | [`參考/`](參考/) | 本機開發用參考網頁（請勿打包上架） |
 
 ---
