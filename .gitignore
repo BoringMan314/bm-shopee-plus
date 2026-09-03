@@ -1,0 +1,10 @@
+*.crx
+*.pem
+.DS_Store
+Thumbs.db
+desktop.ini
+icons/*.psd
+/*.url
+/*.zip
+參考/
+_tmp*

@@ -1,0 +1,83 @@
+/* 搜尋結果：商品卡改橫條列 */
+
+html.bm-shopee-list-layout ul.shopee-search-item-result__items.row,
+html.bm-shopee-list-layout ul.shopee-search-item-result__items {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  margin: 0.5rem 0 0 !important;
+}
+
+html.bm-shopee-list-layout li.shopee-search-item-result__item,
+html.bm-shopee-list-layout li.col-xs-2-4.shopee-search-item-result__item {
+  flex: 0 0 auto !important;
+  flex-basis: 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  float: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 0 0.5rem !important;
+}
+
+html.bm-shopee-list-layout li.shopee-search-item-result__item > div {
+  height: auto !important;
+}
+
+/* 卡片本體：直式改橫式 */
+html.bm-shopee-list-layout li.shopee-search-item-result__item a.contents > div.flex.flex-col,
+html.bm-shopee-list-layout li.shopee-search-item-result__item .flex.flex-col.cursor-pointer.h-full {
+  flex-direction: row !important;
+  align-items: stretch !important;
+  height: auto !important;
+  min-height: 8.25rem;
+}
+
+/* 圖片區：固定縮圖，取消 pt-full 正方形比例 */
+html.bm-shopee-list-layout li.shopee-search-item-result__item .pt-full {
+  width: 8.25rem !important;
+  min-width: 8.25rem !important;
+  max-width: 8.25rem !important;
+  height: 8.25rem !important;
+  padding-top: 0 !important;
+  flex-shrink: 0 !important;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+html.bm-shopee-list-layout li.shopee-search-item-result__item .pt-full img {
+  object-fit: contain !important;
+}
+
+/* 右側資訊 */
+html.bm-shopee-list-layout li.shopee-search-item-result__item .p-2.flex-1 {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-width: 0 !important;
+  padding: 0.75rem 1rem !important;
+}
+
+html.bm-shopee-list-layout li.shopee-search-item-result__item .line-clamp-2 {
+  -webkit-line-clamp: 3 !important;
+  line-clamp: 3 !important;
+  min-height: 0 !important;
+  font-size: 0.9375rem !important;
+}
+
+html.bm-shopee-list-layout li.shopee-search-item-result__item .min-h-\[4rem\],
+html.bm-shopee-list-layout li.shopee-search-item-result__item .min-h-\[5rem\],
+html.bm-shopee-list-layout li.shopee-search-item-result__item .min-h-\[2\.5rem\] {
+  min-height: 0 !important;
+}
+
+/* 橫列時「找相似」懸浮鈕會錯位，先隱藏 */
+html.bm-shopee-list-layout li.shopee-search-item-result__item a[href*="find_similar_products"] {
+  display: none !important;
+}
+
+html.bm-shopee-list-layout li.shopee-search-item-result__item .hover\:shadow-hover:hover,
+html.bm-shopee-list-layout li.shopee-search-item-result__item .hover\:-translate-y-\[1px\]:hover {
+  transform: none !important;
+}

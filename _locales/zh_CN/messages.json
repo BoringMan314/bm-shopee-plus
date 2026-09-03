@@ -1,0 +1,50 @@
+{
+  "extName": {
+    "message": "[B.M] 虾皮 优化"
+  },
+  "extDescription": {
+    "message": "优化 虾皮 各种细节"
+  },
+  "copyShareLink": {
+    "message": "复制分享链接"
+  },
+  "copySuccess": {
+    "message": "已复制：$1$",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "https://shopee.tw/product/6685094/56967235743"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "复制失败，请再试一次。"
+  },
+  "notProductPage": {
+    "message": "无法识别商品链接，请在商品页或商品链接上使用。"
+  },
+  "toggleOnTitle": {
+    "message": "[B.M] 虾皮 优化（功能开启中）"
+  },
+  "toggleOffTitle": {
+    "message": "[B.M] 虾皮 优化（功能皆已关闭）"
+  },
+  "featureEnabled": {
+    "message": "功能已开启"
+  },
+  "featureDisabled": {
+    "message": "功能已关闭"
+  },
+  "featureCopyShare": {
+    "message": "复制分享链接"
+  },
+  "featureCopyShareDesc": {
+    "message": "右键复制干净商品链接"
+  },
+  "featureListLayout": {
+    "message": "商品横条列"
+  },
+  "featureListLayoutDesc": {
+    "message": "搜索结果改为横向列表"
+  }
+}

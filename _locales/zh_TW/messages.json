@@ -1,0 +1,50 @@
+{
+  "extName": {
+    "message": "[B.M] 蝦皮 優化"
+  },
+  "extDescription": {
+    "message": "優化 蝦皮 各種細節"
+  },
+  "copyShareLink": {
+    "message": "複製分享連結"
+  },
+  "copySuccess": {
+    "message": "已複製：$1$",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "https://shopee.tw/product/6685094/56967235743"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "複製失敗，請再試一次。"
+  },
+  "notProductPage": {
+    "message": "無法辨識商品連結，請在商品頁或商品連結上使用。"
+  },
+  "toggleOnTitle": {
+    "message": "[B.M] 蝦皮 優化（功能開啟中）"
+  },
+  "toggleOffTitle": {
+    "message": "[B.M] 蝦皮 優化（功能皆已關閉）"
+  },
+  "featureEnabled": {
+    "message": "功能已開啟"
+  },
+  "featureDisabled": {
+    "message": "功能已關閉"
+  },
+  "featureCopyShare": {
+    "message": "複製分享連結"
+  },
+  "featureCopyShareDesc": {
+    "message": "右鍵複製乾淨商品連結"
+  },
+  "featureListLayout": {
+    "message": "商品橫條列"
+  },
+  "featureListLayoutDesc": {
+    "message": "搜尋結果改為橫向列表"
+  }
+}

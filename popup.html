@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>[B.M] 蝦皮 優化</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="icons/icon48.png" alt="" width="28" height="28" />
+      <div>
+        <h1 id="title"></h1>
+        <p id="subtitle"></p>
+      </div>
+    </header>
+
+    <ul class="features">
+      <li class="feature">
+        <div class="feature-text">
+          <div class="feature-name" id="copyLabel"></div>
+          <div class="feature-desc" id="copyDesc"></div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="copyShareEnabled" />
+          <span class="slider"></span>
+        </label>
+      </li>
+      <li class="feature">
+        <div class="feature-text">
+          <div class="feature-name" id="listLabel"></div>
+          <div class="feature-desc" id="listDesc"></div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="listLayoutEnabled" />
+          <span class="slider"></span>
+        </label>
+      </li>
+    </ul>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

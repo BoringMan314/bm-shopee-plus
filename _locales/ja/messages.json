@@ -1,0 +1,50 @@
+{
+  "extName": {
+    "message": "[B.M] Shopee 最適化"
+  },
+  "extDescription": {
+    "message": "Shopee のさまざまな細部を最適化"
+  },
+  "copyShareLink": {
+    "message": "共有リンクをコピー"
+  },
+  "copySuccess": {
+    "message": "コピーしました：$1$",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "https://shopee.tw/product/6685094/56967235743"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "コピーに失敗しました。もう一度お試しください。"
+  },
+  "notProductPage": {
+    "message": "商品リンクを認識できません。商品ページまたは商品リンク上でお使いください。"
+  },
+  "toggleOnTitle": {
+    "message": "[B.M] Shopee 最適化（機能オン）"
+  },
+  "toggleOffTitle": {
+    "message": "[B.M] Shopee 最適化（すべてオフ）"
+  },
+  "featureEnabled": {
+    "message": "機能をオンにしました"
+  },
+  "featureDisabled": {
+    "message": "機能をオフにしました"
+  },
+  "featureCopyShare": {
+    "message": "共有リンクをコピー"
+  },
+  "featureCopyShareDesc": {
+    "message": "右クリックできれいな商品リンクをコピー"
+  },
+  "featureListLayout": {
+    "message": "商品リスト表示"
+  },
+  "featureListLayoutDesc": {
+    "message": "検索結果を横並びリストに変更"
+  }
+}

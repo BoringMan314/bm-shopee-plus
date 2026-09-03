@@ -1,0 +1,50 @@
+{
+  "extName": {
+    "message": "[B.M] Shopee Plus"
+  },
+  "extDescription": {
+    "message": "Optimize various Shopee details"
+  },
+  "copyShareLink": {
+    "message": "Copy share link"
+  },
+  "copySuccess": {
+    "message": "Copied: $1$",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "https://shopee.tw/product/6685094/56967235743"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "Copy failed. Please try again."
+  },
+  "notProductPage": {
+    "message": "Could not recognize a product link. Use this on a product page or product link."
+  },
+  "toggleOnTitle": {
+    "message": "[B.M] Shopee Plus (features on)"
+  },
+  "toggleOffTitle": {
+    "message": "[B.M] Shopee Plus (all features off)"
+  },
+  "featureEnabled": {
+    "message": "Feature enabled"
+  },
+  "featureDisabled": {
+    "message": "Feature disabled"
+  },
+  "featureCopyShare": {
+    "message": "Copy share link"
+  },
+  "featureCopyShareDesc": {
+    "message": "Right-click to copy a clean product URL"
+  },
+  "featureListLayout": {
+    "message": "Product list layout"
+  },
+  "featureListLayoutDesc": {
+    "message": "Show search results as horizontal rows"
+  }
+}
