@@ -4,6 +4,7 @@ const MENU_ID = 'bm-shopee-copy-share-link';
 const KEY_COPY = 'copyShareEnabled';
 const KEY_LIST = 'listLayoutEnabled';
 const KEY_LEGACY = 'featureEnabled';
+let uiStateQueue = Promise.resolve();
 
 const DOCUMENT_URL_PATTERNS = [
   '*://shopee.tw/*',
@@ -73,8 +74,12 @@ async function applyUiState(settings) {
     title: chrome.i18n.getMessage(anyOn ? 'toggleOnTitle' : 'toggleOffTitle')
   });
 
-  await new Promise((resolve) => {
+  await new Promise((resolve, reject) => {
     chrome.contextMenus.removeAll(() => {
+      if (chrome.runtime.lastError) {
+        reject(new Error(chrome.runtime.lastError.message));
+        return;
+      }
       if (!settings.copyShareEnabled) {
         resolve();
         return;
@@ -86,14 +91,25 @@ async function applyUiState(settings) {
           contexts: ['page', 'link', 'selection'],
           documentUrlPatterns: DOCUMENT_URL_PATTERNS
         },
-        resolve
+        () => {
+          if (chrome.runtime.lastError) {
+            reject(new Error(chrome.runtime.lastError.message));
+            return;
+          }
+          resolve();
+        }
       );
     });
   });
 }
 
+function queueUiState(settings) {
+  uiStateQueue = uiStateQueue.catch(() => {}).then(() => applyUiState(settings));
+  return uiStateQueue;
+}
+
 async function init() {
-  await applyUiState(await getSettings());
+  await queueUiState(await getSettings());
 }
 
 chrome.runtime.onInstalled.addListener(init);
@@ -101,7 +117,7 @@ chrome.runtime.onStartup.addListener(init);
 chrome.storage.onChanged.addListener(async (changes, area) => {
   if (area !== 'local') return;
   if (!changes[KEY_COPY] && !changes[KEY_LIST] && !changes[KEY_LEGACY]) return;
-  await applyUiState(await getSettings());
+  await queueUiState(await getSettings());
 });
 init();
 
