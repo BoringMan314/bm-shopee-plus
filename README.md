@@ -3,6 +3,7 @@
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)](https://developer.chrome.com/docs/extensions/mv3/)
 [![Site](https://img.shields.io/badge/site-shopee.tw-EE4D2D)](https://shopee.tw)
 [![GitHub](https://img.shields.io/badge/GitHub-bm--shopee--plus-181717?logo=github)](https://github.com/BoringMan314/bm-shopee-plus)
+[![GitHub all releases](https://img.shields.io/github/downloads/BoringMan314/bm-shopee-plus/total)](https://github.com/BoringMan314/bm-shopee-plus/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 適用於 [蝦皮購物](https://shopee.tw)（`shopee.tw` 及其他地區站）的瀏覽器擴充功能：優化商品分享連結與搜尋結果列表顯示等細節。
@@ -80,7 +81,7 @@ https://shopee.tw/…-i.6685094.56967235743?sp_atk=…
 
 1. 點選本頁綠色 **Code** → **Download ZIP** 解壓，或執行 `git clone https://github.com/BoringMan314/bm-shopee-plus.git` 複製本倉庫。
 2. 以 **Chrome** 或 **Microsoft Edge** 開啟 `chrome://extensions`（在 Edge 為 `edge://extensions`）。
-3. 開啟「**開發人員模式**」→「**載入未封裝項目**」→ 選取含 [`manifest.json`](manifest.json) 的**專案根目錄**（勿選子資料夾或 `參考/`）。
+3. 開啟「**開發人員模式**」→「**載入未封裝項目**」→ 選取含 [`manifest.json`](manifest.json) 的**專案根目錄**（勿選子資料夾）。
 4. 開啟蝦皮商品頁或搜尋結果頁，重新整理後即可測試右鍵選單與橫條列。
 
 ---
@@ -118,7 +119,6 @@ https://shopee.tw/…-i.6685094.56967235743?sp_atk=…
 | [`_locales/`](_locales/) | 多語系字串（`zh_TW`、`zh_CN`、`ja`、`en_US`） |
 | [`icons/`](icons/) | 工具列圖示（含開啟／關閉狀態） |
 | [`screenshot/`](screenshot/) | 商店與說明用截圖 |
-| [`參考/`](參考/) | 本機開發用參考網頁（請勿打包上架） |
 
 ---
 
