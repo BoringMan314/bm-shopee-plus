@@ -3,7 +3,6 @@
 .DS_Store
 Thumbs.db
 desktop.ini
-icons/*.psd
 /*.url
 /*.zip
 _tmp*
