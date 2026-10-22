@@ -35,7 +35,8 @@ html.bm-shopee-list-layout li.shopee-search-item-result__item .flex.flex-col.cur
 }
 
 /* 圖片區：固定縮圖，取消 pt-full 正方形比例 */
-html.bm-shopee-list-layout li.shopee-search-item-result__item .pt-full {
+html.bm-shopee-list-layout li.shopee-search-item-result__item .pt-full,
+html.bm-shopee-list-layout li.shopee-search-item-result__item a.contents > div.flex.flex-col.cursor-pointer.h-full > div.w-full.relative.z-0 {
   width: 8.25rem !important;
   min-width: 8.25rem !important;
   max-width: 8.25rem !important;
@@ -46,7 +47,8 @@ html.bm-shopee-list-layout li.shopee-search-item-result__item .pt-full {
   align-self: stretch;
 }
 
-html.bm-shopee-list-layout li.shopee-search-item-result__item .pt-full img {
+html.bm-shopee-list-layout li.shopee-search-item-result__item .pt-full img,
+html.bm-shopee-list-layout li.shopee-search-item-result__item a.contents > div.flex.flex-col.cursor-pointer.h-full > div.w-full.relative.z-0 img {
   object-fit: contain !important;
 }
 
